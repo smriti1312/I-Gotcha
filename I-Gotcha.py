@@ -19,24 +19,6 @@ from gi.repository import Gtk, Gdk, Gio
 import subprocess
 
 
-
-# def add_to_startup(program_path, program_name):
-#     desktop_file_path = os.path.expanduser("~/.config/autostart/{}.desktop".format(program_name))
-
-#     with open(desktop_file_path, "w") as desktop_file:
-#         desktop_file.write("""[Desktop Entry]
-#         Type=Application
-#         Exec={}
-#         Hidden=false
-#         NoDisplay=false
-#         X-GNOME-Autostart-enabled=true
-#         Name[en_US]={}
-#         Name={}
-#         Comment[en_US]=Autostart program
-#         Comment=Autostart program\n""".format(program_path, program_name, program_name))
-
-#     print("Added {} to startup.".format(program_name))
-
 def add_to_startup(program_path, program_name):
     desktop_file_path = os.path.expanduser("~/.config/autostart/{}.desktop".format(program_name))
 
@@ -72,8 +54,6 @@ def hide_application_window():
     window.set_opacity(0)
     window.show_all()
     window.hide()
-
-# Call the hide_application_window() function to hide the application window
 
 
 
@@ -202,4 +182,4 @@ if __name__ == "__main__":
 
 
 
-# Create a hidden QWidget for the application window
+
